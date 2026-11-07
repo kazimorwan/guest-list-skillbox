@@ -4,7 +4,7 @@ const guestsList = document.getElementById("guests");
 
 function createGuestList() {
   const list = document.createElement("li");
-  if (guest.value == "") {
+  if (guest.value.trim() === "") {
     alert("Please! provide the guest name.");
   } else {
     list.textContent = guest.value;
