@@ -8,10 +8,7 @@ function createGuestList() {
     alert("Please! provide the guest name.");
   } else {
     list.textContent = guest.value;
-    list.setAttribute(
-      "title",
-      "আপনি যদি এই আইটেম এ ক্লিক করেন তাহলে এটি ডিলিট হয়ে যাবে",
-    );
+    list.setAttribute("title", "আপনি যদি এই আইটেম এ ক্লিক করেন তাহলে এটি ডিলিট হয়ে যাবে");
     guestsList.append(list);
     guest.value = "";
     if (list) {
